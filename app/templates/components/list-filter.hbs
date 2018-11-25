@@ -2,4 +2,11 @@
 key-up=(action 'handleFilterEntry')
 class="light"
 placeholder="Filter By City"}}
+
+<div class="bookmark">
+  {{input type="checkbox" checked=isChecked click=(action "handleCheckboxClick")}}
+  <label>
+    Show marked properties
+  </label>
+</div>
 {{yield results}}

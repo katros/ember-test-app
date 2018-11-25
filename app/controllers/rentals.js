@@ -16,6 +16,9 @@ export default Controller.extend({
             return { query: param, results: results };
           });
       }
+    },
+    filterByCheckbox(param) {
+      console.log("deeper shit", param)
     }
   }
 });

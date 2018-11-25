@@ -9,7 +9,9 @@
 
 {{#list-filter
 filter=(action 'filterByCity')
-as |rentals|}}
+checkboxFilter=(action 'filterByCheckbox')
+as |rentals|
+}}
 <ul class="results">
   {{#each rentals as |rentalUnit|}}
   <li>{{rental-listing rental=rentalUnit}}</li>
